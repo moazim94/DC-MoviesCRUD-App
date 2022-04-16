@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block body %} 
+{% for DC_Movies in all_DC_Movies %}
+<p>
+    Movie name: {{ DC_Movies.Movie_name }}<br>
+    Critcs score: {{ DC_Movies.Critics_score }}<br>
+    Release year: {{ DC_Movies.Release_date }}<br>
+    
+    <a href="{{ url_for('add_review', film_id=DC_Movies.id) }}">Add review</a>
+    <a href="{{ url_for('view_review',film_id=DC_Movies.id) }}">View review</a>
+    
+    </p>
+{%endfor%}
+{% endblock body %}
+
