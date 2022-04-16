@@ -1,7 +1,7 @@
-flask
 flask_sqlalchemy
-pymysql
+flask
 flask_wtf
 pytest-cov
-pytest
+pymysql
 flask_testing
+pytest
