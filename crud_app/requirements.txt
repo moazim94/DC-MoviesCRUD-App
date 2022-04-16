@@ -1,6 +1,6 @@
 flask
 flask_sqlalchemy
-pymsql
+pymysql
 flask_wtf
 pytest-cov
 pytest
